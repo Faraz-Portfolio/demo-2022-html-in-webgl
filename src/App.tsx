@@ -87,7 +87,7 @@ function Suzi(props: any) {
               THREE.UVMapping,
               THREE.RepeatWrapping,
               THREE.RepeatWrapping
-            )
+            ) as any
           }
           normalMap-repeat={[40, 40]}
           normalScale={[0.05, 0.05] as any}
