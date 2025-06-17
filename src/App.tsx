@@ -14,7 +14,9 @@ import { Html } from "./lib/Html";
 
 export default function App() {
   return (
-    <Canvas shadows camera={{ position: [8, 1.5, 8], fov: 25 }}>
+    <Canvas shadows camera={{ position: [15, 4, 15], fov: 25 }}>
+      <color attach="background" args={["goldenrod"]} />
+
       <Suzi />
       <AccumulativeShadows
         temporal
@@ -48,7 +50,7 @@ export default function App() {
         <boxGeometry args={[0.5, 0.5, 0.5]} />
         <meshStandardMaterial color="indianred" />
       </mesh>
-      <OrbitControls autoRotate={false} />
+      <OrbitControls autoRotate={true} />
       <Environment preset="city" />
 
       <Html center transform depthTest position={[0, 1.5, -3]}>
