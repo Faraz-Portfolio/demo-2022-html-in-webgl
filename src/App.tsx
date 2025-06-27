@@ -54,14 +54,7 @@ export default function App() {
       <Environment preset="city" />
 
       <Html center transform depthTest position={[0, 1.5, -3]}>
-        <iframe
-          width="285"
-          height="162.5"
-          src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
+        <iframe width="285" height="162.5" src="https://threejs.org/"></iframe>
       </Html>
 
       <axesHelper />
